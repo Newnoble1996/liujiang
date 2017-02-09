@@ -1,0 +1,117 @@
+@import url(file.css);
+html{
+    font-size:62.5%;
+}
+html,body,.wrap{
+    width:100%;
+    height:100%;
+    background: #f2f2f2;
+}
+.full(@w,@h,@bg){
+    width:@w;
+    height:@h;
+    background:@bg;
+}
+.box(@ver){
+    display:-webkit-box;
+    -webkit-box-orient:@ver;
+}
+.wrap{
+    .box(vertical);
+}
+header{
+    .full(100%,9.7rem,#f7f7f7);
+    .box(horizontal);
+    text-align:center;
+    .left{
+        .full(2.3rem,3.6rem,none);
+        padding-top:3.6rem;
+        padding-left: 2.2rem;
+    }
+    .center{
+        -webkit-box-flex:1;
+        line-height:4rem;
+        font-size:2.2rem;
+        padding-top:3.5rem;
+        font-weight:700;
+        color:#000;
+    }
+    .right{
+        .full(3.7rem,4rem,none);
+        padding-top:3.4rem;
+        padding-right: 2.2rem;
+    }
+}
+section{
+    -webkit-box-flex:1;
+    overflow:auto;
+    &::-webkit-scrollbar{width:0;}
+    .sel{
+        .full(100%,8rem,#ffffff);
+       li{
+            .full(24%,8rem,#ffffff);
+           
+            float: left;
+            font-size: 2rem;
+            line-height: 8rem;
+            text-align: center;
+            color: #878787;
+            img{
+                margin-left: 1.2rem;
+            }
+        }
+       .sel_1{
+           color: #ffa570;
+           border-bottom:1px solid #FFA570;
+           font-size: 2rem;
+           line-height: 8rem;
+           text-align: center;
+       }
+       
+    }
+    .main{
+           .full(100%,9.9rem,#ffffff);
+           margin-top: 1.1rem;
+           .main1{
+               padding-top: 2rem;
+           p{
+               font-size: 1.8rem;
+               color: #666666;
+               padding-left: 3rem;
+           }
+           .span1{
+               font-size: 1.8rem;
+               color: #5354b1;
+               padding-left: 1.8rem;
+           }
+           .span2{
+               font-size: 1.8rem;
+               color: #666666;
+               padding-left: 12.7rem;
+           }
+       }
+       .main2{
+           padding-top: 1.3rem;
+           p{
+               font-size: 1.8rem;
+               color: #666666;
+               padding-left: 3rem;
+               span{
+                   font-size: 1.8rem;
+                   color: #666666;
+                   padding-left: 26.8rem;
+               }
+           }
+           
+       }
+       .jine1{
+           .span1{
+               font-size: 1.8rem;
+               color: #f54643;
+               padding-left: 1.8rem;
+           }
+       }
+       
+       
+   }
+}

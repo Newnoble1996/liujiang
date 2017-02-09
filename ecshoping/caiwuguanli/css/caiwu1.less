@@ -1,0 +1,96 @@
+@import url(file.css);
+html{
+    font-size:62.5%;
+}
+html,body,.wrap{
+    width:100%;
+    height:100%;
+    background: #f2f2f2;
+}
+.full(@w,@h,@bg){
+    width:@w;
+    height:@h;
+    background:@bg;
+}
+.box(@ver){
+    display:-webkit-box;
+    -webkit-box-orient:@ver;
+}
+.wrap{
+    .box(vertical);
+}
+header{
+    .full(100%,9.7rem,#f7f7f7);
+    .box(horizontal);
+    text-align:center;
+    .left{
+        .full(2.3rem,3.6rem,none);
+        padding-top:3.8rem;
+        padding-left: 2.2rem;
+    }
+    .center{
+        -webkit-box-flex:1;
+        line-height:4rem;
+        font-size:2.2rem;
+        padding-top:3.5rem;
+        font-weight:700;
+        color:#000;
+    }
+    .right{
+        .full(3.7rem,4rem,none);
+        padding-top:3.4rem;
+        padding-right: 2.2rem;
+    }
+}
+section{
+    -webkit-box-flex:1;
+    overflow:auto;
+    &::-webkit-scrollbar{width:0;}
+    .shuru{
+        .full(100%,10rem,#ffffff);
+        margin-top: 1.1rem;
+        .shuru_top{
+            .full(100%,5rem,#ffffff);
+            line-height:5rem;
+            border-bottom: 1px solid #666666;
+            font-size: 2.2rem;
+            color: #656565;
+            margin-left: 2.2rem;
+        }
+        .shuru_under{
+            .full(100%,5rem,#ffffff);
+            line-height:5rem;
+            border-bottom: 1px solid #666666;
+            font-size: 2.2rem;
+            color: #656565;
+            margin-left: 2.2rem;
+            .yanzheng{
+                .full(100%,5rem,#ffffff);
+                line-height:5rem;
+                padding-left: 39rem;
+            }
+        }
+        
+    }
+    .text{
+            .full(100%,8rem,none);
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333333;
+            padding-left: 2.2rem;
+            padding-top: 2.3rem;
+        }
+    .tijiao{
+        .full(96%,6rem,#ff7f1c); 
+        margin-left: 2.2rem;
+        margin-right: 2.2rem;
+        line-height: 6rem;
+        text-align: center;
+        -webkit-border-radius: 15px; 
+        border-radius:15px;
+        span{
+            font-size: 3rem;
+            color: #ffffff;
+        }
+    }
+}

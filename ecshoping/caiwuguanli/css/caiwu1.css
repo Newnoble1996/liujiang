@@ -1,0 +1,110 @@
+@import url(file.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 9.7rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+}
+header .left {
+  width: 2.3rem;
+  height: 3.6rem;
+  background: none;
+  padding-top: 3.8rem;
+  padding-left: 2.2rem;
+}
+header .center {
+  -webkit-box-flex: 1;
+  line-height: 4rem;
+  font-size: 2.2rem;
+  padding-top: 3.5rem;
+  font-weight: 700;
+  color: #000;
+}
+header .right {
+  width: 3.7rem;
+  height: 4rem;
+  background: none;
+  padding-top: 3.4rem;
+  padding-right: 2.2rem;
+}
+section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+section::-webkit-scrollbar {
+  width: 0;
+}
+section .shuru {
+  width: 100%;
+  height: 10rem;
+  background: #ffffff;
+  margin-top: 1.1rem;
+}
+section .shuru .shuru_top {
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  line-height: 5rem;
+  border-bottom: 1px solid #666666;
+  font-size: 2.2rem;
+  color: #656565;
+  margin-left: 2.2rem;
+}
+section .shuru .shuru_under {
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  line-height: 5rem;
+  border-bottom: 1px solid #666666;
+  font-size: 2.2rem;
+  color: #656565;
+  margin-left: 2.2rem;
+}
+section .shuru .shuru_under .yanzheng {
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  line-height: 5rem;
+  padding-left: 39rem;
+}
+section .text {
+  width: 100%;
+  height: 8rem;
+  background: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333333;
+  padding-left: 2.2rem;
+  padding-top: 2.3rem;
+}
+section .tijiao {
+  width: 96%;
+  height: 6rem;
+  background: #ff7f1c;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+  line-height: 6rem;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+section .tijiao span {
+  font-size: 3rem;
+  color: #ffffff;
+}
